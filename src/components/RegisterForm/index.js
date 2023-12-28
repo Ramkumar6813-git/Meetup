@@ -40,7 +40,7 @@ const topicsList = [
   },
 ]
 
-const Register = props => (
+const RegisterForm = props => (
   <RegisterContext.Consumer>
     {value => {
       const {
@@ -121,4 +121,4 @@ const Register = props => (
   </RegisterContext.Consumer>
 )
 
-export default Register
+export default RegisterForm

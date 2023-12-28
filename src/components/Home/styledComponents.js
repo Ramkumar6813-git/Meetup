@@ -7,32 +7,39 @@ export const BgContainer = styled.div`
   align-items: center;
   text-align: center;
   padding-top: 40px;
+  height: 80vh;
 `
 
 export const Heading = styled.h1`
   margin-bottom: 5px;
   color: #334155;
+  font-size: 36px;
 `
 export const UserName = styled.h1`
-  font-size: 42px;
+  font-size: 36px;
   margin-bottom: 5px;
   color: #2563eb;
+  @media (min-width: 768px) {
+    font-size: 40px;
+  }
 `
 
 export const Text = styled.p`
-  margin-top: 5px;
   color: #475569;
   font-weight: 600;
+  font-size: 25px;
+  margin-top: 5px;
 `
 
 export const WelcomeText = styled.p`
-  margin-top: 0px;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: bold;
   color: #334155;
+  margin-top: 5px;
 `
 export const Button = styled.button`
   padding: 10px 20px;
+  font-size: 20px;
   font-weight: 600;
   border: none;
   border-radius: 6px;
@@ -41,5 +48,8 @@ export const Button = styled.button`
   margin-bottom: 30px;
 `
 export const DisplayImage = styled.img`
-  width: 50%;
+  width: 280px;
+  @media (min-width: 768px) {
+    width: 400px;
+  }
 `

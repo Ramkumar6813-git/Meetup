@@ -8,13 +8,26 @@ export const BgContainer = styled.div`
   text-align: center;
   height: 80vh;
   font-family: 'Roboto';
-  padding-right: 30px;
+  @media (min-width: 768px) {
+    padding-right: 30px;
+  }
 `
 export const RegistrationDiv = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto';
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `
 export const RegistrationImage = styled.img`
-  width: 300px;
+  width: 250px;
+  align-self: center;
+  @media (min-width: 768px) {
+    width: 300px;
+  }
 `
 export const RegistrationForm = styled.form`
   display: flex;
@@ -24,6 +37,8 @@ export const RegistrationForm = styled.form`
 `
 export const FormHeading = styled.h1`
   margin-bottom: 5px;
+  color: #334155;
+  font-size: 32px;
 `
 export const InputContainer = styled.div`
   display: flex;

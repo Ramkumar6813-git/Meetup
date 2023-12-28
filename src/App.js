@@ -4,7 +4,7 @@ import './App.css'
 import {Switch, Route, Redirect} from 'react-router-dom'
 import Home from './components/Home'
 import NotFound from './components/NotFound'
-import Register from './components/Register'
+import RegisterForm from './components/RegisterForm'
 
 import RegisterContext from './context/RegisterContext'
 
@@ -34,7 +34,7 @@ const topicsList = [
 class App extends Component {
   state = {
     name: '',
-    topic: topicsList[0].displayText,
+    topic: topicsList[0].id,
     registerError: false,
   }
 
@@ -71,7 +71,7 @@ class App extends Component {
       >
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/register" component={Register} />
+          <Route exact path="/register" component={RegisterForm} />
           <Route path="/not-found" component={NotFound} />
           <Redirect to="/not-found" />
         </Switch>
